@@ -1,15 +1,15 @@
 return {
-    'shaunsingh/nord.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-        vim.g.nord_contrast = true
-        vim.g.nord_borders = true
-        vim.g.nord_disable_background = false
-        vim.g.nord_italic = false
-        vim.g.nord_uniform_diff_background = true
-        vim.g.nord_bold = false
-
-        require('nord').set()
-    end
+	--
+	"folke/tokyonight.nvim",
+	priority = 1000,
+	config = function()
+		---@diagnostic disable-next-line: missing-fields
+		require("tokyonight").setup({
+			styles = {
+				comments = { italic = false }, -- Disable italics in comments
+			},
+		})
+		-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
+		vim.cmd.colorscheme("tokyonight-night")
+	end,
 }
