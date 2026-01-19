@@ -1,0 +1,13 @@
+vim.wo.number = true -- make line nums default (default: false)
+vim.wo.relativenumber = true -- set relative nums (default: false)
+vim.o.wrap = false -- display lines as one long line (default: true) 
+vim.o.linebreak = true -- companion to wrap, don't split words (default: false)
+vim.o.mouse = 'a' -- enable mouse mode (default: '')
+vim.o.autoindent = true -- copy indent from current line when starting new one (default: true)
+vim.o.ignorecase = true -- case-insensitive searching unless \C or capital in search (default: false)
+vim.o.smartcase = true -- smart case (default: false)
+vim.o.shiftwidth = 4 -- the number of spaces inserted for each indent (default: 8)
+vim.o.tabstop = 4 -- insert n spaces for a tab (default: 8)
+vim.o.softtabstop = 4 -- number of spaces that a tav counts for (default: 8)
+vim.o.expandtab = true -- convert tabs to spaces (default: false)
+
